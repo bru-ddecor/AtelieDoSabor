@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/imagemPrincipal.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-right: 60px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 5px 5px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+header nav ul li {
+    margin-top: 25px;
+}
+
+header nav ul li a:hover {
+    color: #5f091fda;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+ul li.active a {
+   border: 1px solid #fff;
+    padding: 5px 10px;
+    color: white;
+    font-family: 14px;
+    border-radius: 20px;
+    background: transparent;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.logo img {
+    float: left;
+    width: 120px;
+    margin: 5px;
+}
+
+.titulo {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titulo h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.botao button {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+button {
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    color: white;
+    font-family: 14px;
+    border-radius: 20px;
+    background: transparent;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.button button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.principal {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    text-align: center;
+    transform: transform 0.2s;
+
+}
+
+
+#promocoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+
+}
+.carrossel {
+    display: flex;
+    gap: 20px;
+    
+    
+}
+
+
+
+
+.produto {
+    min-width: 200px;
+    height: 150px;
+    margin: 0 10px;
+}
+
+.produto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+#promocoes h1 {
+    padding: 25px;
+    font-family: libre baskerville;
+    text-align: center;
+}
+
+#cardapio{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #521924;
+}
+#cardapio h1{
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    font-family: libre baskerville;
+}
+
+.principal{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background: #fff;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    padding: 15px;
+    text-align: center;
+    transform: transform 0.2s;
+    justify-content: center;
+    
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card h2{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+.comidas .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+#unidades h1{
+    text-align: center;
+    position: relative;
+    padding: 30px;
+    font-family: libre baskerville;
+}
+
+
+#sobre{
+    padding: 10px 20px;
+
+}
+#sobre h1{
+    text-align: center;
+    font-family: libre baskerville;
+    padding: 10px;
+}
+#sobre p{
+    text-align: justify;
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*footer*/
+.footer {
+  background: #521924;
+  color: #fff;
+  padding: 50px 20px 10px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h2, .footer h3 {
+  color: #f5cf52; /* dourado */
+  font-family: libre bakerville;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  column-gap: 0%;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #f5cf52;
+}
+
+.footer-social a {
+  display: block;
+  margin: 6px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #888;
+}

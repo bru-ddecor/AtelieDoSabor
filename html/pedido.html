@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/pedido.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="../css/img/logo.png"></div>
+            <!-- MENU -->
+            <ul>
+                <li><a href="#principais">Pratos Principais</a></li>
+                <li><a href="#acompanhamentos">Acompanhamentos</a></li>
+                <li><a href="#vegetarianos">Vegetarianos</a></li>
+                <li><a href="#sobremesas">Sobremesas</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+            </ul>
+            <a href="#carrinho" class="btn_carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="carrinho"> Carrinho: R$ <span id="valorCarrinho">0</span> </div>
+        </nav>
+    </header>
+
+    <section id="principais">
+        <!-- Pratos -->
+        <h2>Pratos Principais</h2>
+        <div class="item">
+            <div class="principal">
+                <div class="card">
+                    <img src="../css/img/Bife.jpeg" alt="Bife">
+                    <h2>Bife Acebolado</h2>
+                    <p class="descricao">Bife acebolado + arroz + feijão + batata frita
+                        → clássico absurdo, vende todo dia sem esforço</p>
+                    <p class="preco">R$24,90</p>
+                    <button class="comprar" onclick="adicionarPedido('Bife Acebolado', 24.90)">Comprar</button>
+                </div>
+
+                <div class="card">
+                    <img src="../css/img/Frango.jpeg" alt="frango">
+                    <h2>Frango Grelhado</h2>
+                    <p class="descricao">Frango grelhado + arroz + feijão + salada
+                        → opção mais “fit”, pega outro público</p>
+                    <p class="preco">R$22,90</p>
+                    <button class="comprar" onclick="adicionarPedido('Frango Grelhado', 22.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="../css/img/linguica.jpeg" alt="linguica">
+                    <h2>Linguiça Acebolada</h2>
+                    <p class="descricao"> Linguiça acebolada + arroz + feijão + farofa
+                        → barato de produzir e MUITO pedido</p>
+                    <p class="preco">R$23,90</p>
+                    <button class="comprar" onclick="adicionarPedido('Linguiça Acebolada', 23.90)">Comprar</button>
+                </div>
+                
+            </div>
+        </div>
+    </section><br><br>
+
+    <section id="acompanhamento">
+        <h2>Acompanhamentos</h2>
+        <div class="principal">
+            <div class="card">
+                <img src="../css/img/arroz.jpeg" alt="arroz">
+                <h2>Arroz</h2>
+                <p class="preco">R$3,00</p>
+                <button class="comprar" onclick="adicionarPedido('Arroz', 3.00)">Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="../css/img/feijão.jpeg" alt="feijão">
+                <h2>Feijão</h2>
+                <p class="preco">R$3,50</p>
+                <button class="comprar" onclick="adicionarPedido('Feijão', 3.50)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/salada.jpeg" alt="salada">
+                <h2>Salada</h2>
+                <p class="preco">R$4,00</p>
+                <button class="comprar" onclick="adicionarPedido('Salada', 4.00)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/batata.jpeg" alt="batata">
+                <h2>Batata Frita</h2>
+                <p class="preco">R$5,00</p>
+                <button class="comprar" onclick="adicionarPedido('Batata Frita', 5.00)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/farofa.jpeg" alt="farofa">
+                <h2>Farofa</h2>
+                <p class="preco">R$3,00</p>
+                <button class="comprar" onclick="adicionarPedido('Farofa', 3.00)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/Macarrao.jpeg" alt="Macarrao">
+                <h2>Macarrão</h2>
+                <p class="preco">R$5,50</p>
+                <button class="comprar" onclick="adicionarPedido('Macarrão', 5.50)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/couve.jpeg" alt="couve">
+                <h2>Couve</h2>
+                <p class="preco">R$4,50</p>
+                <button class="comprar" onclick="adicionarPedido('Couve', 4.50)">Comprar</button>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section id="vegetarianos">
+        <h2>Pratos Vegetarianos</h2>
+        <div class="principal">
+            <div class="card">
+                <img src="../css/img/abobrinha.jpeg" alt="Abobrinha">
+                <h2>Abobrinha Recheada</h2>
+                <p class="descricao">Abobrinha recheada com legumes e queijo
+                    → mais “gourmet”, dá valor no cardápio</p>
+                <p class="preco">R$21,90</p>
+                <button class="comprar" onclick="adicionarPedido('Abobrinha Recheada', 21.90)">Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="../css/img/Cogumelo.jpeg" alt="Cogumelo">
+                <h2>Strogonoff de Cogumelos</h2>
+                <p class="descricao">Strogonoff de cogumelos + arroz
+                    → versão veggie do campeão de vendas</p>
+                <p class="preco">R$24,90</p>
+                <button class="comprar" onclick="adicionarPedido('Strogonoff de Cogumelos', 24.90)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/farofa.jpeg" alt="Legumes">
+                <h2>Legumes salteados</h2>
+                <p class="descricao">Legumes salteados + arroz + feijão + farofa
+                    → básico bem feito (resolve o problema)</p>
+                <p class="preco">R$19,90</p>
+                <button class="comprar" onclick="adicionarPedido('Legumes salteados', 19.90)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/omelete.jpeg" alt="Omelete">
+                <h2>Omelete</h2>
+                <p class="descricao">Omelete de legumes + arroz + salada
+                    → proteína sem carne (barato e funcional)</p>
+                <p class="preco">R$20,90</p>
+                <button class="comprar" onclick="adicionarPedido('Omelete', 20.90)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/escondidinho.jpeg" alt="Escondididnho">
+                <h2>Escondidinho</h2>
+                <p class="descricao">Escondidinho de mandioca com legumes
+                    → comfort food vegetariana (forte demais)</p>
+                <p class="preco">R$22,90</p>
+                <button class="comprar" onclick="adicionarPedido('Escondidinho', 22.90)">Comprar</button>
+            </div>
+        </div>
+    </section><br><br>
+    <section id="sobremesas">
+        <h2>Sobremesas</h2>
+        <div class="principal">
+            <div class="card">
+                <img src="../css/img/gelatina.jpeg" alt="gelatina">
+                <h2>Gelatina colorida</h2>
+                <p class="descricao">simples, infantil, vende MUITO</p>
+                <p class="preco">R$3,90</p>
+                <button class="comprar" onclick="adicionarPedido('Gelatina colorida', 3.90)">Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="../css/img/boloCenoura.jpeg" alt="boloCenoura">
+                <h2>Bolo de Cenoura</h2>
+                <p class="descricao">caseiro = conexão emocional</p>
+                <p class="preco">R$5,90</p>
+                <button class="comprar" onclick="adicionarPedido('Bolo de Cenoura', 5.90)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/arrozdoce.jpeg" alt="arrozdoce">
+                <h2>Arroz Doce</h2>
+                <p class="descricao"> conforto + custo baixo</p>
+                <p class="preco">R$6,90</p>
+                <button class="comprar" onclick="adicionarPedido('Arroz Doce', 6.90)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/mousse.jpeg" alt="mousse">
+                <h2>Mousse</h2>
+                <p class="descricao"> barato, fácil, margem boa</p>
+                <p class="preco">R$7,90</p>
+                <button class="comprar" onclick="adicionarPedido('Mousse', 7.90)">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="../css/img/pudim.jpeg" alt="pudim">
+                <h2>Pudim de leite</h2>
+                <p class="descricao">rei das sobremesas, não tem erro</p>
+                <p class="preco">R$8,90</p>
+                <button class="comprar" onclick="adicionarPedido('Pudim de leite', 8.90)">Comprar</button>
+            </div>
+
+        </div><br><br>
+    </section>
+    <!-- Pedido -->
+    <div class="pedido">
+
+        <h2>Seu Pedido</h2>
+
+        <div id="listaPedido"></div>
+
+        <div class="total">
+            Total: R$ <span id="totalPedido">0</span>
+        </div>
+
+        <button class="finalizar" onclick="finalizarPedido()">
+            Finalizar Pedido
+        </button>
+
+    </div>
+    <script src="../script/pedido.js"></script>
+</body>
+
+</html>

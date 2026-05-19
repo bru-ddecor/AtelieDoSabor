@@ -1,0 +1,84 @@
+/* CSS apenaspar a página cardápio */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+}
+.principal{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background: #fff;
+    width: 250px;
+    border-radius: 15px; /*borda circular */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); /*sombra na borda */
+    padding: 15px;
+    text-align: center;
+}
+
+.card:hover{
+    transform: scale(1.05); /*Aumenta o tamanho do card */
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Texto do card */
+.card h2{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.descricao{
+    font-size: 14px;
+    color: #555;
+}
+
+.preco{
+    font-size: 20px;
+    color: #891b34;
+    font-weight: bold; /* Define a espessura */
+    margin: 10px 0;
+}
+
+.comprar{
+    background: #5f091e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer; /* Faz a "Mãozinha" para clicar */
+}
+
+/* Mudança de cor quando o cursor passa do mouse passa por cima */
+button:hover{
+    background: #891b34;
+}
+
+/* Sessão cardápio */
+.cardapio{
+    height: 60vh;
+}
+
+.comidas .card{
+    display: flex;
+    justify-content: center; /* Alinha os itens no centro horizontal*/
+    align-items: center; /* Alinha os itens no centro vertical*/
+    margin-top: 90px;
+    
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
