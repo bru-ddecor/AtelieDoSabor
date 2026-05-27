@@ -28,7 +28,7 @@ ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 15px;  /* espaço entre os itens*/
 }
 
 ul li {
@@ -42,6 +42,7 @@ ul li a {
     padding: 5px 5px;
     border: 1px solid transparent;
     transition: 0.5 ease;
+    /* "ease" é um tipo de curva de animação */
 }
 
 
@@ -65,7 +66,7 @@ h2{
 .principal {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Definem itens que podem quebrar linha dentro de um container "wrap"significa quebrar linha */
     justify-content: center;
 }
 
@@ -82,6 +83,7 @@ h2{
 }
 
 .card:hover {
+    /* :hover serve para quando passar o mouse por cima do elemento */
     transform: scale(1.05);
 }
 
@@ -161,11 +163,11 @@ button:hover {
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
 
     padding: 20px;
-    overflow: auto;
+    overflow: auto;  /* controla o que acontece quando o conteúdo ultrapassa o tamanho de um elemento */
 }
 
 .pedido h2 {
-    margin-bottom: 20px;
+    margin-bottom: 20px;  /* Margem da base*/
     color: #5f091e;
 }
 
@@ -189,6 +191,7 @@ button:hover {
 
 /* RESPONSIVO */
 @media (max-widht: 768px){
+    /* Serve para o site se adaptar para diferentes tamanhos */
 
     nav{
         flex-direction: column;

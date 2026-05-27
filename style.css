@@ -13,7 +13,7 @@ body {
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/imagemPrincipal.jpeg);
     height: 100vh;
-    background-size: cover; /* "cover" serve para preencher toda área do elemento*/
+    background-size: cover;
     background-position: center;
     min-height: 100px;
 }
@@ -27,7 +27,7 @@ ul {
 }
 
 ul li {
-    display: inline-block;  /* Não quebra linha automaticamente*/
+    display: inline-block;
 }
 
 ul li a {
@@ -47,22 +47,16 @@ header nav ul li a:hover {
     color: #5f091fda;
     background-color: white;
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 ul li.active a {
-   border: 1px solid #fff;
-    padding: 5px 10px;
-    color: white;
-    font-family: 14px;
-    border-radius: 20px;
-    background: transparent;
-    font-size: 15px;
-    cursor: pointer;
+    background-color: white;
+    color: #5f091fda;
 }
 
 .logo img {
-    float: left; /* "float" faz o elemento flutuar */
+    float: left;
     width: 120px;
     margin: 5px;
 }
@@ -72,7 +66,7 @@ ul li.active a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Move os eleemntos X e Y, para a esquerda e para cima */
+    transform: translate(-50%, -50%);
 }
 
 .titulo h1 {
@@ -85,7 +79,6 @@ ul li.active a {
     top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 
 }
 
@@ -126,22 +119,22 @@ button {
 }
 
 
-#promocoes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-
-}
 .carrossel {
-    display: flex;
-    gap: 20px;
-    
-    
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
 }
 
+.rolagem {
+    display: flex;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+}
 
-
+.grupo {
+    display: flex;
+    align-items: stretch;
+}
 
 .produto {
     min-width: 200px;
@@ -167,24 +160,17 @@ button {
     }
 }
 
-#promocoes h1 {
-    padding: 25px;
-    font-family: libre baskerville;
-    text-align: center;
-}
-
-#cardapio{
+.cardapio{
      display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    background-color: #521924;
+    background-color: #5f091e;
 }
-#cardapio h1{
+.cardapio h1{
     margin-bottom: 30px;
     text-align: center;
     color: white;
-    font-family: libre baskerville;
 }
 
 .principal{
@@ -218,7 +204,9 @@ button {
     margin: 10px 0;
 }
 
-
+.cardapio{
+    height: 100vh;
+}
 .comidas .card{
     display: flex;
     justify-content: center;
@@ -230,88 +218,4 @@ button {
 .card a{
     text-decoration: none;
     color: black;
-}
-
-#unidades h1{
-    text-align: center;
-    position: relative;
-    padding: 30px;
-    font-family: libre baskerville;
-}
-
-
-#sobre{
-    padding: 10px 20px;
-
-}
-#sobre h1{
-    text-align: center;
-    font-family: libre baskerville;
-    padding: 10px;
-}
-#sobre p{
-    text-align: justify;
-    max-width: 800px;
-    margin: auto;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/*footer*/
-.footer {
-  background: #521924;
-  color: #fff;
-  padding: 50px 20px 10px;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.footer h2, .footer h3 {
-  color: #f5cf52; /* dourado */
-  font-family: libre bakerville;
-}
-
-.footer p {
-  font-size: 14px;
-  color: #ccc;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  column-gap: 0%;
-}
-
-.footer-links li {
-  margin: 8px 0;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #ccc;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  color: #f5cf52;
-}
-
-.footer-social a {
-  display: block;
-  margin: 6px 0;
-}
-
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid #333;
-  margin-top: 30px;
-  padding-top: 10px;
-  font-size: 13px;
-  color: #888;
 }
