@@ -21,7 +21,7 @@
                 <li><a href="#sobremesas">Sobremesas</a></li>
                 <li><a href="#bebidas">Bebidas</a></li>
             </ul>
-            <a href="#carrinho" class="btn_carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#carrinho" class="btn_carrinho" onclick="abrirCarrinho()"><i class="fa-solid fa-cart-shopping"></i></a>
             <div class="carrinho"> Carrinho: R$ <span id="valorCarrinho">0</span> </div>
         </nav>
     </header>
@@ -205,22 +205,22 @@
             <h2>Refrigerantes</h2>
             <p class="descricao">Refrigerantes - Coca-cola, Fanta uva, Fanta Laranja e Guaraná</p>
             <p class="preco">R$7,00</p>
-            <button class="comprar">Comprar</button>
+            <button class="comprar" onclick="adicionarPedido('Refrigerantes', 7.00)">Comprar</button>
         </div>
 
         <div class="card">
-            <img src="../css/img/suco_limao.jpeg" alt="suco">
-            <h2>Suco de limão</h2>
-            <p class="descricao">Suco de limão, copo de 500ml</p>
-            <p class="preco">R$5,00</p>
-            <button class="comprar">Comprar</button>
+            <img src="../css/img/suco_limao.jpeg" alt="suco de laranja">
+            <h2>Suco de laranja</h2>
+            <p class="descricao">Suco de laranja natural, copo de 500ml</p>
+            <p class="preco">R$4,99</p>
+            <button class="comprar" onclick="adicionarPedido('Suco de laranja', 4.99)">Comprar</button>
         </div>
         <div class="card">
-            <img src="../css/img/suco_melancia.jpeg" alt="suco_melancia">
+            <img src="../css/img/suco_melancia.jpeg" alt="suco de melancia">
             <h2>Suco de Melancia</h2>
             <p class="descricao">Suco de melancia, copo 500ml</p>
-            <p class="preco">R$5,00</p>
-            <button class="comprar">Comprar</button>
+            <p class="preco">R$5,80</p>
+            <button class="comprar" onclick="adicionarPedido('Suco de Melancia', 5.80)">Comprar</button>
         </div>
     </section>
     <!-- Pedido -->

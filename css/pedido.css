@@ -155,6 +155,7 @@ button:hover {
     right: 0;
     top: 0;
 
+    right: -340px;
     width: 300px;
     height: 100vh;
 
@@ -164,6 +165,11 @@ button:hover {
 
     padding: 20px;
     overflow: auto;  /* controla o que acontece quando o conteúdo ultrapassa o tamanho de um elemento */
+    transition: right 0.3s ease; /* Transição suave para a propriedade "right" */
+}
+
+.pedido.active {
+    right: 0;
 }
 
 .pedido h2 {

@@ -30,5 +30,11 @@ function finalizarPedido(){
 }
 
 function abrirCarrinho(){
-    
+    const carrinho = document.querySelector('.pedido');
+
+    if(carrinho) {
+        carrinho.classList.toggle('active');
+    } else {
+        console.error('Elemento com a classe "pedido" não encontrado.');
+    }
 }
