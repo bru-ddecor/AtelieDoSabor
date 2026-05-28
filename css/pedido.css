@@ -203,3 +203,10 @@ button:hover {
     color: #fff;
     font-size: 24px;
 }
+
+#bebidas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Definem itens que podem quebrar linha dentro de um container "wrap"significa quebrar linha */
+    justify-content: center;
+}
