@@ -21,7 +21,8 @@
                 <li><a href="#sobremesas">Sobremesas</a></li>
                 <li><a href="#bebidas">Bebidas</a></li>
             </ul>
-            <a href="#carrinho" class="btn_carrinho" onclick="abrirCarrinho()"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#carrinho" class="btn_carrinho" onclick="abrirCarrinho()"><i
+                    class="fa-solid fa-cart-shopping"></i></a>
             <div class="carrinho"> Carrinho: R$ <span id="valorCarrinho">0</span> </div>
         </nav>
     </header>
@@ -56,7 +57,7 @@
                     <p class="preco">R$23,90</p>
                     <button class="comprar" onclick="adicionarPedido('Linguiça Acebolada', 23.90)">Comprar</button>
                 </div>
-                
+
             </div>
         </div>
     </section><br><br>
@@ -225,6 +226,7 @@
     </section>
     <!-- Pedido -->
     <div class="pedido">
+        <button class="fechar-carrinho" onclick="abrirCarrinho()">✕</button>
 
         <h2>Seu Pedido</h2>
 
@@ -232,6 +234,20 @@
 
         <div class="total">
             Total: R$ <span id="totalPedido">0</span>
+        </div>
+
+        <div class="chat-ia">
+
+            <h3>Como posso ajudar? 🍴</h3>
+
+            <div id="chatResposta"></div>
+
+            <input type="text" id="mensagemIA" placeholder="Ex: Quero uma opção vegetariana">
+
+            <button class="btn-enviar" onclick="enviarMensagemIA()">
+                Enviar
+            </button>
+
         </div>
 
         <button class="finalizar" onclick="finalizarPedido()">
